@@ -6,6 +6,14 @@
         {{ intro }}
       </p>
     </div>
+
+    <div :class="`${$options.name}__media-blocks mb-5`">
+      <app-media-block
+        v-for="mediaBlock in mediaBlocks"
+        :key="mediaBlock.id"
+        v-bind="mediaBlock"
+      />
+    </div>
   </div>
 </template>
 
@@ -15,11 +23,17 @@ import { mapState } from 'vuex';
 import { ABOUT } from '../../store/modules/landing-page';
 import { GET_LANDING_PAGE } from '../../store/action-types';
 
+import AppMediaBlock from '../../components/AppMediaBlock.vue';
+
 export default {
   name: `About`,
+  components: {
+    AppMediaBlock,
+  },
   computed: {
     ...mapState(`landingPage`, [
       `intro`,
+      `mediaBlocks`,
       `title`,
     ]),
   },
@@ -37,5 +51,9 @@ export default {
 <style>
 .About__hero {
   max-width: 36em;
+}
+
+.About__media-blocks > :not(:last-child) {
+  margin-bottom: 4em;
 }
 </style>
