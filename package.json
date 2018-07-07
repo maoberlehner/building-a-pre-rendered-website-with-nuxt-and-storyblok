@@ -17,6 +17,7 @@
   "dependencies": {
     "bootstrap": "^4.1.1",
     "nuxt": "npm:nuxt-edge",
+    "storyblok-js-client": "^1.0.9",
     "vuex": "^3.0.1"
   },
   "devDependencies": {

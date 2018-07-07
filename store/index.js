@@ -1,3 +1,9 @@
 import Vuex from 'vuex';
 
-export default () => new Vuex.Store();
+import landingPage from './modules/landing-page';
+
+export default () => new Vuex.Store({
+  modules: {
+    landingPage,
+  },
+});
