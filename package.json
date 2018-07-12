@@ -16,14 +16,14 @@
   "dependencies": {
     "bootstrap": "^4.1.1",
     "nuxt": "npm:nuxt-edge",
-    "storyblok-js-client": "^1.0.9",
+    "storyblok-js-client": "^1.0.12",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
     "@avalanche/eslint-config": "^2.0.0",
     "@avalanche/stylelint-config": "^0.1.2",
-    "babel-eslint": "^8.2.5",
-    "eslint": "^5.0.1",
+    "babel-eslint": "^8.2.6",
+    "eslint": "^5.1.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-vue": "^4.5.0",
     "stylelint": "^9.3.0"
