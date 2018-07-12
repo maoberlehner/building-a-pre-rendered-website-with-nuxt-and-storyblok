@@ -5,7 +5,6 @@
   "author": "Markus Oberlehner <markus.oberlehner@gmail.com>",
   "private": true,
   "scripts": {
-    "bootstrap": "yarn && cp .env.development .env",
     "dev": "NODE_ENV=development nuxt",
     "build": "NODE_ENV=production nuxt build",
     "start": "NODE_ENV=production nuxt start",

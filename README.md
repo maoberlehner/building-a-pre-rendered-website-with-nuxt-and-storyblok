@@ -8,9 +8,6 @@ This is an example project for the following article: [Building a Pre-Rendered W
 ## Build Setup
 
 ```bash
-# Install dependencies and set up the .env file.
-yarn bootstrap
-
 # Serve with hot reload.
 yarn dev
 
