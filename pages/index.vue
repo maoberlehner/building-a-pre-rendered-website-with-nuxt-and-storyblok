@@ -54,7 +54,7 @@ export default {
   // initialized. This is the right place
   // to fetch the data necessary for the
   // page to render.
-  async fetch({ store, route }) {
+  async fetch({ store }) {
     await store.dispatch(`landingPage/${GET_LANDING_PAGE}`, HOME);
   },
 };

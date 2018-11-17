@@ -43,11 +43,11 @@ export default {
   computed: {
     imageSrc() {
       if (!this.image) return null;
-      return this.image.url.replace('a.storyblok.com', 'img2.storyblok.com/360x250');
+      return this.image.url.replace(`a.storyblok.com`, `img2.storyblok.com/360x250`);
     },
     imageSrcset() {
       if (!this.image) return null;
-      return `${this.image.url.replace('a.storyblok.com', 'img2.storyblok.com/720x500/filters:quality(40)')} 2x`;
+      return `${this.image.url.replace(`a.storyblok.com`, `img2.storyblok.com/720x500/filters:quality(40)`)} 2x`;
     },
   },
 };
